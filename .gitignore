@@ -1,0 +1,28 @@
+# ========== 凭据与个人配置（切勿提交）==========
+# 网关自留凭据副本：含 accessToken / refreshToken 明文
+server/auth.cn-cli.json
+auth.cn-cli.json
+# 本机配置：含 apiKey
+server/config.json
+config.json
+config.json.bak*
+# 用量与日志
+server/usage.json
+usage.json
+server/server.log
+server/boot.log
+*.log
+
+# ========== 个人桥接层（本机专用，含本机路径）==========
+start-proxy.cmd
+stop-proxy.cmd
+# shell:Startup 自启脚本含本机中文路径，且需 GBK 编码，不入库
+
+# ========== 通用 ==========
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+playwright-report/
+test-results/

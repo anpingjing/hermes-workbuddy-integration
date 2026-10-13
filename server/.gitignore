@@ -1,0 +1,38 @@
+# 本地凭证与个人配置（切勿提交）
+auth.json
+auth.*.json
+config.json
+usage.json
+.login-state.json
+.gh-token
+# DeepSeek 官方站点凭证（token 明文，切勿提交）
+.ds-token
+auth.deepseek.json
+node_modules/
+*.log
+_ref/
+
+# 配置备份（手工改动前的快照，含本机信息与 apiKey，绝不入库）
+# 用 `bak*` 而不是 `bak-*`：手工复制出来的 config.json.bak（无时间戳后缀）同样含密钥，
+# 漏掉它等于给未来的 `git add -A` 留了个坑。
+config.json.bak*
+
+# 浏览器用户目录：调试/自动登录时生成，含 Cookie 与登录态，**绝不能提交**
+.chrome-login/
+.chrome-profile/
+.puppeteer-data/
+playwright-report/
+test-results/
+
+# 运行输出（start-hidden / login 脚本重定向产生的）
+login-out.txt
+login-err.txt
+serve-out.txt
+serve-err.txt
+
+# 与本项目无关的其他目录（各自独立，不与本仓库混合提交）
+zcode-proxy/
+zcode-proxy-deploy/
+zcode-api-master.zip
+_src/
+.tools/
